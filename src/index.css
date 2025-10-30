@@ -1,0 +1,95 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary */
+  --primary-main: #5e07cd;
+  --primary-light: #7843e9;
+  --word-color: #333;
+  --title-color: #111;
+  --back-ground-color: #fafafa;
+  --paragraph-color: #555;
+  --nav-bg: white;
+  --project-bg: white;
+
+  /* icons color */
+  --html-color: #e34c26;
+  --css-color: #264de4;
+  --java-script-color: #f1d01b;
+  --react-color: #61dafb;
+  --redux-color: #764abc;
+  --github-color: #000000;
+  --git-color: #f05539;
+  --java-color: #5382a1;
+  --cpp-color: #4caf50;
+  --facebook-color: #4267B2;
+  --linked-in-color: #0077b5;
+  --gmail-color: #c72923;
+  --type-script-color: #007acc;
+  --recoil-color: #3578e5;
+  --react-query-color: #f73f51;
+}
+
+[data-theme="dark"] {
+  --word-color: #e0e0e0;
+  --title-color: #ffffff;
+  --back-ground-color: #1a1a1a;
+  --paragraph-color: #b0b0b0;
+  --nav-bg: #2d2d2d;
+  --project-bg: #2d2d2d;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--back-ground-color);
+  color: var(--word-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* media */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (max-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (max-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (max-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

@@ -1,0 +1,38 @@
+.button{
+    margin: 0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.text{
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+}
+
+.icon{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    transition: 1s;
+}
+
+.button:hover .text{
+    top: -20px;
+    transition: 1s;
+}
+
+.button:hover .icon{
+    bottom: 50%;
+    transition: 1s;
+
+}

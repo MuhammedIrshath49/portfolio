@@ -1,0 +1,64 @@
+.submit-button{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-left: -35px;
+    margin-top: 2px;
+    transition: 1s;
+}
+
+.submit-button > input{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 20px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.submit-button:hover > input{   
+    padding-left: 250px;
+}
+
+.icon > svg{
+    transition: 1s;
+}
+
+.submit-button:hover > .icon > svg{   
+    transform: rotate(45deg);
+}
+
+.submit-button:hover > .icon{
+    margin: 0;
+    animation: icon 1.5s 1s linear infinite forwards;
+}
+
+@keyframes icon{
+    0%{
+        margin: 0;
+    }
+    25%{
+        margin-top: 5px;
+    }
+    50%{
+        margin: 0;
+    }
+    75%{
+        margin-top: -5px;
+    }
+    100%{
+        margin: 0;
+    }
+}

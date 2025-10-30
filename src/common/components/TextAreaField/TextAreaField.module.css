@@ -1,0 +1,35 @@
+.text-area-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+
+.text-area-field > label{
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.text-area-field > label::first-letter{
+    text-transform: uppercase;
+}
+
+.text-area-field > textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    color: #999;
+    background-color: #f0f0f0;
+    font-weight: 600;
+    display: flex;
+}
+
+.text-area-field > textarea::placeholder{
+    color: #999;
+    font-weight: 500;
+}
